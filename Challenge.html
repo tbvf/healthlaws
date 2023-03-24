@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Moving the Needle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="Challenge.js"></script>
+</head>
+
+<body>
+    <div class="flex flex-wrap align-middle">
+        <a href="Landing.html">
+            <div
+                class="max-w-[10rem] mt-2 ml-2 border-2 rounded-full border-slate-800 hover:border-amber-800 p-2 overflow-hidden">
+                <img src="Gravel.png" class="" alt="" />
+            </div>
+        </a>
+    </div>
+
+    <h3 id="Header"
+        class="mx-10 pb-2 text-3xl font-extrabold text-center bg-gradient-to-r from-amber-200 via-amber-600 to-amber-200 bg-[length:100%_3px] bg-no-repeat bg-left-bottom">
+        Test the Knowledge You've Learned!</h3>
+
+    <div class="flex justify-center mt-10">
+        <button id="Start_Button" onclick="begin()"
+            class="rounded-2xl py-2 px-4 bg-amber-800 text-slate-200">Begin</button>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-10">
+        <button id="Answer0" onclick="answered0()" class="py-2 rounded-full bg-amber-800 text-slate-200"></button>
+        <button id="Answer1" onclick="answered1()" class="py-2 rounded-full bg-amber-800 text-slate-200"></button>
+        <h4 id="Results"></h4>
+    </div>
+</body>
+
+</html>
